@@ -1,0 +1,56 @@
+/* App.css */
+
+/* Estilo para el contenedor principal */
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilo para el título */
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo para la etiqueta del cuadro de texto */
+label {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Estilo para el cuadro de texto de entrada */
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para los botones */
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo adicional para el botón "Generate Image" */
+button:nth-child(2) {
+    background-color: #28a745;
+}
+
+button:nth-child(2):hover {
+    background-color: #1e7e34;
+}
