@@ -1,11 +1,14 @@
 // Importa la biblioteca axios para realizar solicitudes HTTP
 import axios from 'axios';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 // Función para analizar una imagen utilizando Azure AI Vision
 export async function analyzeImage(imageUrl) {
   // Definir la clave y el punto final del servicio de Computer Vision
-  const apiKey = '6c8ffe75803449a4bafd5a1c1bf7cb51';
-  const endpoint = 'https://analisis-imagen-azure.cognitiveservices.azure.com/';
+  const apiKey = process.env.AZURE_API_KEY;
+  const endpoint = process.env.AZURE_ENDPOINT;  
 
   // Configuración de encabezados para la solicitud HTTP
   const headers = {
